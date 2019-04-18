@@ -1,6 +1,6 @@
 Feature: Test
 
-  @ORPHAN @MANUAL
+  @PMBDDC-2 @OPEN @MANUAL
   Scenario: Test
     Given true
     Then false
