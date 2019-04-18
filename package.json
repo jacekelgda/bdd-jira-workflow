@@ -1,0 +1,10 @@
+{
+  "name": "bdd-jira-workflow",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:jacekelgda/bdd-jira-workflow.git",
+  "author": "jacekelgda <jacekelgda@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {}
+}
