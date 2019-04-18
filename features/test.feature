@@ -1,6 +1,6 @@
 Feature: Test
 
-  @PMBDDC-2 @OPEN @MANUAL
+  @PMBDDC-2 @WIP @MANUAL
   Scenario: Test
     Given true
     Then false
