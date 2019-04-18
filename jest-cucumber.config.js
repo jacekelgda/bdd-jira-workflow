@@ -1,9 +1,10 @@
-const setJestCucumberConfiguration = require('jest-cucumber').setJestCucumberConfiguration;
+import { setJestCucumberConfiguration } from 'jest-cucumber'
+
 
 // run only open right now ( this means it will not run regression test)
 setJestCucumberConfiguration({
-  tagFilter: 'not @COMPLETED',
-  scenarioNameTemplate: (vars) => {
-      return JSON.stringify({ title: vars.scenarioTitle, tag: vars.scenarioTags[0] })
-  }
-});
+	tagFilter: 'not @COMPLETED',
+	scenarioNameTemplate: (vars) => {
+		return JSON.stringify({ title: vars.scenarioTitle, tag: vars.scenarioTags[0] })
+	}
+})
