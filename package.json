@@ -7,11 +7,15 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "jest": "jest --verbose",
-    "test": "npm run jest",
-    "lint": "eslint ."
+    "jest": "jest -c jest/jest.config.js --verbose",
+    "ac": "jest -c jest/jest-ci.config.js",
+    "test": "npm run create-step && npm run jest",
+    "lint": "eslint .",
+    "create-step": "node util/createStep.js"
   },
   "devDependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^7.0.0",
     "eslint": "^5.16.0",
     "jest": "^24.7.1",
     "jest-cucumber": "^2.0.11",

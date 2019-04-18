@@ -1,5 +1,4 @@
-import { setJestCucumberConfiguration } from 'jest-cucumber'
-
+const setJestCucumberConfiguration = require('jest-cucumber').setJestCucumberConfiguration
 
 // run only open right now ( this means it will not run regression test)
 setJestCucumberConfiguration({
