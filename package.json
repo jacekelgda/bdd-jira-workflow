@@ -10,6 +10,7 @@
     "jest": "jest -c jest/jest.config.js --verbose --passWithNoTests",
     "ac": "jest -c jest/jest-ci.config.js --passWithNoTests",
     "test": "npm run create-step && npm run jest",
+    "ci-test": "npm run create-step && npm run ac",
     "lint": "eslint .",
     "create-step": "node util/createStep.js"
   },
